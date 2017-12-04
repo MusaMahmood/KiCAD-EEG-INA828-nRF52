@@ -448,8 +448,6 @@ F 3 "~" H 15650 6600 60  0000 C CNN
 $EndComp
 Text GLabel 12900 9850 0    60   Input ~ 0
 AVDD
-Text Label 4250 7700 2    60   ~ 0
-SRB1
 Text GLabel 29100 4700 3    60   Input ~ 0
 DGND
 NoConn ~ 15150 8000
@@ -496,8 +494,6 @@ F 3 "" H 16550 12250 50  0000 C CNN
 	1    16550 12250
 	1    0    0    -1  
 $EndComp
-Text Label 4300 7350 2    60   ~ 0
-BIASIN
 Text Label 23500 6300 1    60   ~ 0
 DOUT
 Text Label 23900 6300 1    60   ~ 0
@@ -575,17 +571,6 @@ F 3 "" H 13900 4050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 14550 12000
-$Comp
-L CONN_1 P4
-U 1 1 58B800EE
-P 3400 7350
-F 0 "P4" V 3350 7350 40  0000 C CNN
-F 1 "CONN_1" V 3450 7350 40  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3400 7350 60  0001 C CNN
-F 3 "" H 3400 7350 60  0000 C CNN
-	1    3400 7350
-	-1   0    0    1   
-$EndComp
 Text GLabel 13650 3750 0    60   Input ~ 0
 AVSS
 Text GLabel 16550 7350 2    60   Input ~ 0
@@ -655,17 +640,6 @@ Text Label 13500 10850 0    60   ~ 0
 IN2-
 Text Label 13500 11250 0    60   ~ 0
 IN1-
-$Comp
-L CONN_1 P3
-U 1 1 591A6E5B
-P 3400 7700
-F 0 "P3" V 3350 7700 40  0000 C CNN
-F 1 "CONN_1" V 3450 7700 40  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3400 7700 60  0001 C CNN
-F 3 "" H 3400 7700 60  0000 C CNN
-	1    3400 7700
-	-1   0    0    1   
-$EndComp
 $Comp
 L NRF528XX-QFAA-RESCUE-EEG_ADS1299_2 U3
 U 1 1 597FEAA6
@@ -1625,8 +1599,6 @@ Wire Wire Line
 Wire Wire Line
 	13800 6350 13800 6600
 Wire Wire Line
-	3750 7350 4300 7350
-Wire Wire Line
 	15150 12250 15350 12250
 Wire Wire Line
 	15150 12000 15150 12250
@@ -1846,8 +1818,6 @@ Wire Notes Line
 Wire Notes Line
 	500  6100 5350 6100
 Wire Wire Line
-	3750 7700 4250 7700
-Wire Wire Line
 	2450 7000 2450 7150
 Wire Wire Line
 	2350 7000 2450 7000
@@ -1882,10 +1852,10 @@ Wire Wire Line
 	9900 10650 10300 10650
 Connection ~ 9900 11650
 $Comp
-L CONN_01X06 P5
+L CONN_01X06 P3
 U 1 1 5A2786C7
 P 8800 10900
-F 0 "P5" H 8800 11250 50  0000 C CNN
+F 0 "P3" H 8800 11250 50  0000 C CNN
 F 1 "CONN_01X06" V 8900 10900 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 8800 10900 50  0001 C CNN
 F 3 "" H 8800 10900 50  0001 C CNN
