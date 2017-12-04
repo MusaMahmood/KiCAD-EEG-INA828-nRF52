@@ -1116,9 +1116,9 @@ F 3 "" H 10050 11450 50  0000 C CNN
 	1    10050 11450
 	-1   0    0    1   
 $EndComp
-Text Label 9800 10250 0    60   ~ 0
-IN1
 Text Label 9800 11250 0    60   ~ 0
+IN1
+Text Label 9800 10250 0    60   ~ 0
 IN2
 Text Label 9650 11650 0    60   ~ 0
 NEG_INPUT

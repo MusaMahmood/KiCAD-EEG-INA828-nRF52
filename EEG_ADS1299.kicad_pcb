@@ -3,7 +3,7 @@
   (general
     (links 206)
     (no_connects 0)
-    (area 265.849999 125.449999 311.150001 147.250001)
+    (area 265.799999 122.157123 320.907143 147.250001)
     (thickness 1.6)
     (drawings 37)
     (tracks 640)
@@ -85,7 +85,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory Gerber_nRF52_ExG/))
+      (outputdirectory Gerber_nRF52_ExG_v3.1/))
   )
 
   (net 0 "")
