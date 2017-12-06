@@ -1090,9 +1090,9 @@ Text GLabel 10600 10900 0    60   Input ~ 0
 AVSS
 Text GLabel 10600 11950 0    60   Input ~ 0
 AVSS
-Text GLabel 10650 11100 2    60   Input ~ 0
+Text GLabel 10700 10950 2    60   Input ~ 0
 AVDD
-Text GLabel 10650 10100 2    60   Input ~ 0
+Text GLabel 10700 9750 2    60   Input ~ 0
 AVDD
 $Comp
 L R R7
@@ -1159,13 +1159,9 @@ Wire Wire Line
 Wire Wire Line
 	10050 10600 10150 10600
 Wire Wire Line
-	10600 10100 10650 10100
+	10600 9750 10600 10150
 Wire Wire Line
-	10600 10150 10600 10100
-Wire Wire Line
-	10600 11100 10650 11100
-Wire Wire Line
-	10600 11100 10600 11150
+	10600 10950 10600 11150
 Wire Wire Line
 	10700 11900 11200 11900
 Wire Wire Line
@@ -1891,4 +1887,30 @@ Text Label 13500 10450 0    60   ~ 0
 IN3-
 Wire Wire Line
 	13850 10450 12450 10450
+$Comp
+L C C37
+U 1 1 5A28A53A
+P 10800 9950
+F 0 "C37" H 10800 10050 40  0000 L CNN
+F 1 "1uF" H 10806 9865 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 10838 9800 30  0001 C CNN
+F 3 "~" H 10800 9950 60  0000 C CNN
+	1    10800 9950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10600 9750 10700 9750
+Wire Wire Line
+	10600 9950 10650 9950
+Connection ~ 10600 9950
+Wire Wire Line
+	10950 9950 11100 9950
+Wire Wire Line
+	11100 9950 11100 10050
+Text GLabel 11100 10050 2    60   Input ~ 0
+AVSS
+Wire Wire Line
+	10600 10950 10700 10950
+Text Notes 11000 9900 0    60   ~ 0
+Caps: 1µF or 10µF
 $EndSCHEMATC
